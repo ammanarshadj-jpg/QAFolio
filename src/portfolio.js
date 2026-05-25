@@ -1,395 +1,259 @@
-/* Change this file to get your personal Portfolio */
-
-// To change portfolio colors globally go to the  _globalColor.scss file
+/* =======================================================
+   portfolio.js — Amman Arshad
+   Target Role: Jr QA Automation Engineer (Remote)
+   Instructions: Replace the contents of src/portfolio.js
+   in your forked developerFolio repo with this file.
+   ======================================================= */
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
-// Splash Screen
-
-const splashScreen = {
-  enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
-};
-
-// Summary And Greeting Section
-
-const illustration = {
-  animated: true // Set to false to use static SVG
-};
-
+// ─── GREETING ────────────────────────────────────────────
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "ammanarshadj-jpg",
+  title: "Hi, I'm Amman",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A detail-oriented QA Automation enthusiast 🚀 with hands-on experience building Salesforce ATF test frameworks, SecOps automation pipelines, and a passion for delivering quality software through smart, scalable testing."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/your-resume-link-here", // ← Upload your PDF to Google Drive & paste the shareable link
+  displayGreeting: true,
 };
 
-// Social Media Links
-
+// ─── SOCIAL MEDIA ────────────────────────────────────────
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  github: "https://github.com/ammanarshadj-jpg",
+  linkedin: "https://www.linkedin.com/in/ammanarshad", // ← Update with your real LinkedIn URL
+  gmail: "ammanarshad.j@gmail.com",
+  display: true,
 };
 
-// Skills Section
-
+// ─── SKILLS ──────────────────────────────────────────────
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Do",
+  subTitle:
+    "QA AUTOMATION ENGINEER BUILDING RELIABLE TEST FRAMEWORKS ACROSS SALESFORCE AND BEYOND",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Design and maintain automated test suites using Salesforce ATF (Apex Test Framework)"),
+    emoji("⚡ Build SecOps automation pipelines to catch security vulnerabilities early in the SDLC"),
+    emoji("⚡ Write clear, reproducible bug reports and collaborate cross-functionally to drive resolution"),
+    emoji("⚡ Perform functional, regression, and end-to-end testing across web and CRM platforms"),
+    emoji("⚡ Advocate for quality throughout the development lifecycle — shift-left testing mindset"),
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+    { skillName: "Salesforce ATF", fontAwesomeClassname: "fab fa-salesforce" },
+    { skillName: "Apex", fontAwesomeClassname: "fas fa-code" },
+    { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "Git & GitHub", fontAwesomeClassname: "fab fa-github" },
+    { skillName: "CI/CD Pipelines", fontAwesomeClassname: "fas fa-infinity" },
+    { skillName: "REST API Testing", fontAwesomeClassname: "fas fa-network-wired" },
+    { skillName: "SecOps Automation", fontAwesomeClassname: "fas fa-shield-alt" },
+    { skillName: "CRM Systems", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "UX Design Thinking", fontAwesomeClassname: "fas fa-pencil-ruler" },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true,
 };
 
-// Education Section
-
+// ─── EDUCATION ───────────────────────────────────────────
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Arizona State University",
+      logo: require("./assets/images/asuLogo.png"), // ← Add an ASU logo image to assets if you have one
+      subHeader: "Bachelor of Science, Industrial Design (In Progress)",
+      duration: "Current",
+      desc: "Developing a systems-thinking and human-centered design foundation that directly informs how I approach software quality and user-facing test coverage.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+        "Arizona State University Toastmasters — Public Speaking & Leadership Development",
+      ],
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
-  ]
-};
-
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      schoolName: "Northern Virginia Community College",
+      logo: require("./assets/images/novacLogo.png"), // ← Add NOVA logo to assets if you have one
+      subHeader: "Associate of Applied Science, General Studies",
+      duration: "Completed",
+      desc: "Built a strong analytical foundation across technical and communication disciplines.",
+      descBullets: [],
     },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
-// Work experience section
+// ─── TECH STACK ──────────────────────────────────────────
+const techStack = {
+  viewSkillBars: true,
+  experience: [
+    { Stack: "Salesforce ATF & Apex Testing", progressPercentage: "75%" },
+    { Stack: "Test Planning & QA Documentation", progressPercentage: "80%" },
+    { Stack: "SecOps & Security Automation", progressPercentage: "65%" },
+    { Stack: "CI/CD & GitHub Actions", progressPercentage: "60%" },
+    { Stack: "API & Integration Testing", progressPercentage: "60%" },
+    { Stack: "Client Communication & Stakeholder Management", progressPercentage: "95%" },
+  ],
+  displayCodersrank: false,
+};
 
+// ─── WORK EXPERIENCE ─────────────────────────────────────
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Salesforce ATF & SecOps Automation — Self-Directed Project",
+      company: "GitHub (Personal Project)",
+      companylogo: require("./assets/images/githubLogo.png"), // ← add to assets
+      date: "2024 – Present",
+      desc: "Independently designed and built a Salesforce ATF test automation framework integrated with SecOps tooling to identify vulnerabilities in CI/CD workflows.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+        "Authored Apex test classes covering functional and regression scenarios",
+        "Automated security checks within deployment pipelines using GitHub Actions",
+        "Documented test plans, test cases, and defect reports following QA best practices",
+        "Demonstrated shift-left testing by integrating quality gates early in the SDLC",
+      ],
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Account Coordinator & Client Success",
+      company: "L'Oréal",
+      companylogo: require("./assets/images/lorealLogo.png"), // ← add to assets
+      date: "2019 – 2025",
+      desc: "Managed high-volume client relationships and account coordination for a global luxury brand — skills that translate directly into stakeholder communication, defect triage collaboration, and cross-team QA workflows.",
+      descBullets: [
+        "Tracked and resolved client issues with urgency — analogous to bug triage and resolution cycles",
+        "Maintained meticulous records and performance metrics — mirrors QA documentation discipline",
+        "Communicated technical product details clearly to non-technical clients",
+        "Exceeded performance targets consistently in a remote/virtual environment",
+      ],
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
-  ]
+      role: "Personal Stylist",
+      company: "Nordstrom",
+      companylogo: require("./assets/images/nordstromLogo.png"), // ← add to assets
+      date: "2015 – 2020",
+      desc: "Delivered high-touch, consultative client experiences in a fast-paced luxury retail environment, building strong communication and problem-solving habits.",
+      descBullets: [
+        "Translated client needs into tailored solutions — mirrors translating requirements into test cases",
+        "Built a loyal repeat client base through trust, follow-through, and attention to detail",
+        "Collaborated with team members to continuously improve the customer experience",
+      ],
+    },
+  ],
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
+// ─── OPEN SOURCE / PROJECTS ──────────────────────────────
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "true",
+  display: true,
 };
 
-// Some big projects you have worked on
-
+// ─── BIG PROJECTS (FEATURED) ─────────────────────────────
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Featured Projects",
+  subtitle: "HANDS-ON AUTOMATION WORK THAT DEMONSTRATES QA ENGINEERING CAPABILITY",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/salesforceLogo.png"), // ← add to assets
+      projectName: "Salesforce ATF & SecOps Automation",
+      projectDesc:
+        "A self-built Salesforce Apex Test Framework project integrated with security operations automation. Covers functional test coverage, CI/CD pipeline security gates, and structured defect documentation — built to demonstrate real-world Jr QA Automation Engineer skills.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
+          name: "View on GitHub",
+          url: "https://github.com/ammanarshadj-jpg/salesforce-atf-secops-automation",
+        },
+      ],
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/merakiLogo.png"), // ← add Meraki logo to assets
+      projectName: "Meraki — Luxury Brand Portfolio",
+      projectDesc:
+        "Personal brand portfolio site showcasing design thinking, front-end development, and UX principles — built and deployed via GitHub Pages.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
-    }
+          name: "Visit Site",
+          url: "https://ammanarshadj-jpg.github.io/Meraki",
+        },
+        {
+          name: "View on GitHub",
+          url: "https://github.com/ammanarshadj-jpg/Meraki",
+        },
+      ],
+    },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true,
 };
 
-// Achievement Section
-// Include certificates, talks etc
-
+// ─── ACHIEVEMENTS & CERTIFICATIONS ───────────────────────
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
+  title: emoji("Certifications & Achievements 🏆"),
+  subtitle: "CREDENTIALS THAT SUPPORT A QUALITY-FIRST, USER-CENTERED ENGINEERING MINDSET",
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Google UX Design Certificate",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Completed Google's professional UX Design certification via Coursera — directly informing how I approach usability testing, user-centered test case design, and quality advocacy.",
+      image: require("./assets/images/googleLogo.png"), // ← add to assets
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Coursera — Google UX Design",
+          url: "https://www.coursera.org/professional-certificates/google-ux-design",
         },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+      ],
     },
     {
-      title: "Google Assistant Action",
+      title: "Toastmasters International",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+        "Active member of ASU Toastmasters, developing public speaking and leadership communication skills essential for cross-functional QA collaboration and stakeholder reporting.",
+      image: require("./assets/images/toastmastersLogo.png"), // ← add to assets
+      footerLink: [],
     },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true,
 };
 
-// Blogs Section
-
+// ─── BLOGS (disable if you don't have Medium) ────────────
 const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  title: "Blog",
+  subtitle: "I write about QA, automation, and tech when inspiration strikes.",
+  displayMediumBlogs: false,
+  display: false, // ← Set to true and add MEDIUM_USERNAME to .env if you blog
 };
 
-// Talks Sections
-
+// ─── TALKS (disable for now) ─────────────────────────────
 const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  title: "Talks",
+  subtitle: emoji(""),
+  talks: [],
+  display: false,
 };
 
-// Podcast Section
-
+// ─── PODCAST (disable for now) ───────────────────────────
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
+  subtitle: "",
+  podcast: [],
+  display: false,
 };
 
-// Resume Section
-const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
-};
-
+// ─── CONTACT ─────────────────────────────────────────────
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Open to Jr QA Automation Engineer roles — remote preferred. Let's talk about how I can help your team ship quality software.",
+  number: "703-343-6502",
+  email_address: "ammanarshad.j@gmail.com",
 };
 
-// Twitter Section
-
+// ─── TWITTER (optional) ──────────────────────────────────
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "", // ← Add your Twitter/X handle if you have one
+  display: false,
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+// ─── GITHUB PROFILE (pulls your pinned repos automatically) ──
+const isHireable = true; // ← Shows the "Open to Work" badge
 
 export {
-  illustration,
   greeting,
   socialMediaLinks,
-  splashScreen,
   skillsSection,
   educationInfo,
   techStack,
@@ -403,5 +267,4 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
 };
